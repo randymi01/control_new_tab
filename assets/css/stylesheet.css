@@ -1,0 +1,128 @@
+@font-face { font-family: "HelveticaNeue-Light"; src: url('../font/HelveticaNeue-Light.ttf'); }
+@font-face { font-family: "HelveticaNeue-Thin"; src: url('../font/HelveticaNeue-Thin.ttf'); }
+@font-face { font-family: "Montserrat-Light"; src: url('../font/Montserrat-Light.otf'); }
+@font-face { font-family: "control"; src: url('../font/control.otf'); }
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.search-area {
+	height: 50px;
+	width: calc(100% - 50px);
+	text-align: right;
+	z-index: 1;
+	position: relative;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+body {
+	font-family: "control" !important;
+	background-color: black;
+	position: relative;
+	/*background-image: url(../img/4.jpg);*/ 
+	background-position: top right;
+	background-size: cover;
+}
+
+h1 {
+	color: white;
+}
+body::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#weather {
+	text-align: right;
+}
+
+#weather-icon {
+	position: absolute;
+	height: 120px;
+	bottom: 0;
+	right: 0;
+	font-size: 99px;
+}
+
+#time, #weather {
+	font-family: "control" !important;
+	font-size: 80px;
+	font-weight: 100 !important;
+	z-index: 1000;
+}
+
+#time small, #weather small{
+	color:white;
+	font-size: 20px;
+}
+
+#city-input, #city-label{
+	color:white;
+	font-size: 20px;
+	font-weight: 100;
+	z-index: 1000;
+	font-family: "control";
+	background: none;
+	text-align: right;
+	outline: 0;
+	border-width:0;
+	width: 60%;
+	float: right;
+}
+
+#city-input::placeholder{
+	color: white;
+}
+.content_class{
+	position: relative;
+	top: 0%;
+	left: 0%;
+	right: 0%;
+}
+
+.red{
+	color: red;
+}
+
+.timeblock {
+	display: table;
+	width: calc(100% - 50px);
+	text-align: right;
+	z-index: 1;
+}
+
+.timeinner {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.wi {
+	display: block !important;
+}
+
+.brlarge {
+	display: block;
+	margin-bottom: 1.5em;
+}
+
+form { margin-bottom: 0; }
