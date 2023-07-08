@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/controln/public_html/
-    - /bin/cp -R /home2/controln/repositories/control_new_tab/ $DEPLOYPATH
+    - /bin/cp -R /home2/controln/repositories/control_new_tab $DEPLOYPATH
