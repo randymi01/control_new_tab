@@ -10,13 +10,23 @@
 
 
 	<script type="text/javascript"> 
-		var imageCount = 45;
+		const desktopCount = 45;
+		const mobileCount = 16;
 		function ChangeIt() 
 		{
-		var num = Math.ceil( Math.random() * imageCount );
-		document.body.background = 'assets/img/'+num+'.jpg';
-		document.body.style.backgroundSize = "cover";// Background repeat
-		document.body.style.backgroundimage
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				var num = Math.ceil( Math.random() * mobileCount );
+				document.body.background = 'assets/img/mobile/'+num+'.jpg';
+				document.body.style.backgroundSize = "cover";// Background repeat
+				document.body.style.backgroundimage
+			}
+			else{
+				var num = Math.ceil( Math.random() * desktopCount );
+				document.body.background = 'assets/img/desktop/'+num+'.jpg';
+				document.body.style.backgroundSize = "cover";// Background repeat
+				document.body.style.backgroundimage
+			}
+			
 		}
 	</script>
 
