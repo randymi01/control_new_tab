@@ -42,13 +42,23 @@
 	  position: relative;
 	  z-index: 9999;
 	}
+
+	.particle_fix {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		margin: 0;
+		padding: 0;
+	}
 </style>
 
-<body>
+<body style="background-repeat:no-repeat; background-position: center center;">
 
 	
 	<div class="content_class" style="height: 100%">
-		<div id="particles-js" class="background"></div>
+		<div id="particles-js" class="background particle_fix"></div>
 		<div class="timeblock top-element">
 			<div class="timeinner pt-3">
 				<h1 id="time" style="float: right">

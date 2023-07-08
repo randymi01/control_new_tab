@@ -248,11 +248,11 @@ $(document).ready(function() {
 			"detect_on": "window",
 			"events": {
 				"onhover": {
-					"enable": false,
+					"enable": true,
 					"modehour": "repulse"
 				},
 				"onclick": {
-					"enable": false,
+					"enable": true,
 					"modehour": "push"
 				},
 				"resize": true
@@ -288,8 +288,7 @@ $(document).ready(function() {
 			"background_color": "#b61924",
 			"background_image": "",
 			"background_position": "50% 50%",
-			"background_repeat": "no-repeat",
-			"background_size": "cover"
+			"background_size": "100%"
 		}
 	});
 
